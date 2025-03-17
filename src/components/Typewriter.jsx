@@ -1,0 +1,41 @@
+import { useState, useEffect } from "react";
+
+export const Typewriter = ({ texts, typingSpeed = 100, deletingSpeed = 50, delay = 1500 }) => {
+  const [textIndex, setTextIndex] = useState(0);
+  const [displayedText, setDisplayedText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [cursorVisible, setCursorVisible] = useState(true);
+
+  useEffect(() => {
+    const handleTyping = () => {
+      const currentText = texts[textIndex];
+      if (isDeleting) {
+        setDisplayedText((prev) => prev.slice(0, -1));
+      } else {
+        setDisplayedText((prev) => currentText.slice(0, prev.length + 1));
+      }
+
+      if (!isDeleting && displayedText === currentText) {
+        setTimeout(() => setIsDeleting(true), delay);
+      } else if (isDeleting && displayedText === "") {
+        setIsDeleting(false);
+        setTextIndex((prev) => (prev + 1) % texts.length);
+      }
+    };
+
+    const timeout = setTimeout(handleTyping, isDeleting ? deletingSpeed : typingSpeed);
+    return () => clearTimeout(timeout);
+  }, [displayedText, isDeleting, textIndex, texts, typingSpeed, deletingSpeed, delay]);
+
+  useEffect(() => {
+    const cursorBlink = setInterval(() => setCursorVisible((prev) => !prev), 500);
+    return () => clearInterval(cursorBlink);
+  }, []);
+
+  return (
+    <span className="typewriter">
+      {displayedText}
+      <span className="cursor" style={{ opacity: cursorVisible ? 1 : 0 }}>|</span>
+    </span>
+  );
+};

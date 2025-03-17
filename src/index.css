@@ -1,0 +1,28 @@
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea {
+  font: inherit;
+}
+
+/* General Styles */
+body {
+  scroll-behavior: smooth;
+  font-family: "Inconsolata", monospace;
+  min-height: 100%;
+  font-size: medium;
+  line-height: 1.3em;
+  background-color: black;
+}
