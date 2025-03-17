@@ -1,12 +1,29 @@
 import { useState, useEffect } from "react";
 
-export const Typewriter = ({ texts, typingSpeed = 100, deletingSpeed = 50, delay = 1500 }) => {
+export const Typewriter = ({
+  texts,
+  typingSpeed = 100,
+  deletingSpeed = 50,
+  delay = 1500,
+  initialDelay = 2000,  // Add initial delay as a prop
+}) => {
   const [textIndex, setTextIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const [cursorVisible, setCursorVisible] = useState(true);
+  const [hasStarted, setHasStarted] = useState(false); // Track if typing effect has started
 
   useEffect(() => {
+    const timeout = setTimeout(() => {
+      setHasStarted(true); // Start after initial delay
+    }, initialDelay);
+
+    return () => clearTimeout(timeout);
+  }, [initialDelay]);
+
+  useEffect(() => {
+    if (!hasStarted) return; // Wait until the initial delay is over
+
     const handleTyping = () => {
       const currentText = texts[textIndex];
       if (isDeleting) {
@@ -25,7 +42,7 @@ export const Typewriter = ({ texts, typingSpeed = 100, deletingSpeed = 50, delay
 
     const timeout = setTimeout(handleTyping, isDeleting ? deletingSpeed : typingSpeed);
     return () => clearTimeout(timeout);
-  }, [displayedText, isDeleting, textIndex, texts, typingSpeed, deletingSpeed, delay]);
+  }, [displayedText, isDeleting, textIndex, texts, typingSpeed, deletingSpeed, delay, hasStarted]);
 
   useEffect(() => {
     const cursorBlink = setInterval(() => setCursorVisible((prev) => !prev), 500);
