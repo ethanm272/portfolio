@@ -1,5 +1,6 @@
 import { Id_Badge } from "../../components/Id_Card";
 import { Typewriter } from '../../components/Typewriter';
+import { Menu } from '../../components/Menu_Btn'
 import "./home.css";
 
 const typewriterMessages = [
@@ -8,7 +9,6 @@ const typewriterMessages = [
   'in my element - <div>',
   'machine learning enthusiast',
   'the picasso of front-end',
-  'turning ☕ into 💻',
   'data-driven decision maker',
   'breaking loops, not promises'
 ]
@@ -16,6 +16,7 @@ const typewriterMessages = [
 export const Home = () => {
   return (
     <div className="home-page">
+      <Menu/>
       <Typewriter texts={typewriterMessages}/>
       <Id_Badge />
     </div>

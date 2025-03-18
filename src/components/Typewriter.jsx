@@ -52,7 +52,7 @@ export const Typewriter = ({
   return (
     <span className="typewriter">
       {displayedText}
-      <span className="cursor" style={{ opacity: cursorVisible ? 1 : 0 }}>|</span>
+      <span className="cursor" style={{ opacity: cursorVisible ? 1 : 0}}>|</span>
     </span>
   );
 };
