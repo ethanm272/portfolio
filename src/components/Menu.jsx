@@ -1,10 +1,13 @@
 import { useState } from "react";
 import { Outlet, Link } from "react-router-dom";
+import { Typewriter } from "../components/Typewriter";
 
 export const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => setIsOpen(!isOpen);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
     <>
@@ -18,17 +21,17 @@ export const Menu = () => {
       <aside className={`menu-link-list ${isOpen ? " open" : ""}`}>
         <Link className="menu-link" to="/">
           <span className="link-number">01.</span>
-          <span className="link-name">Projects</span>
+          <Typewriter text="Projects" display={isOpen} />
         </Link>
         <hr className="menu-divider"></hr>
         <Link className="menu-link" to="/">
           <span className="link-number">02.</span>
-          <span className="link-name">Abouts</span>
+          <Typewriter text="About" display={isOpen} />
         </Link>
         <hr className="menu-divider"></hr>
         <Link className="menu-link" to="/">
           <span className="link-number">03.</span>
-          <span className="link-name">Projects</span>
+          <Typewriter text="Contact" display={isOpen} />
         </Link>
       </aside>
 

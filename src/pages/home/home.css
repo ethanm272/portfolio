@@ -11,22 +11,26 @@
 }
 
 /* Recurring Typewriter Text */
-.typewriter {
+.repeat-typewriter {
   color: white;
   position: absolute;
   left: 0;
   right: 0;
   margin-inline: auto;
   width: fit-content;
-  bottom: 20vh;
+  top: 70vh;
   z-index: 1;
   font-size: 4rem;
   line-height: 4rem;
   text-align: center;
 }
 
-.cursor {
+.orange-cursor {
   color: #f08a0e;
+}
+
+.black-cursor {
+  color: black;
 }
 
 /* Menu */
@@ -109,4 +113,14 @@
   width: 90vw;
   border: 1px solid black;
   margin: 0 auto 0 auto;
+}
+
+.typewriter {
+  overflow: hidden;
+  border-right: 0.1em solid black;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  width: 0;
+  animation: blink-caret 0.75s step-end infinite;
 }

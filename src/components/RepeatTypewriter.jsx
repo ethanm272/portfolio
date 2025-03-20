@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 
-export const Typewriter = ({
-  text,
-  display,
+export const RepeatTypewriter = ({
+  texts,
   typingSpeed = 100,
-  deletingSpeed = 70,
+  deletingSpeed = 50,
   delay = 1500,
-  initialDelay = 1000, // Add initial delay as a prop
+  initialDelay = 2000, // Add initial delay as a prop
 }) => {
+  const [textIndex, setTextIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const [cursorVisible, setCursorVisible] = useState(true);
@@ -19,23 +19,24 @@ export const Typewriter = ({
     }, initialDelay);
 
     return () => clearTimeout(timeout);
-  }, [display, initialDelay]);
+  }, [initialDelay]);
 
   useEffect(() => {
     if (!hasStarted) return; // Wait until the initial delay is over
-    if (!display) setIsDeleting(true);
 
     const handleTyping = () => {
+      const currentText = texts[textIndex];
       if (isDeleting) {
         setDisplayedText((prev) => prev.slice(0, -1));
       } else {
-        setDisplayedText((prev) => text.slice(0, prev.length + 1));
+        setDisplayedText((prev) => currentText.slice(0, prev.length + 1));
       }
 
-      if (!isDeleting && displayedText === text) {
+      if (!isDeleting && displayedText === currentText) {
+        setTimeout(() => setIsDeleting(true), delay);
       } else if (isDeleting && displayedText === "") {
         setIsDeleting(false);
-        setHasStarted(false);
+        setTextIndex((prev) => (prev + 1) % texts.length);
       }
     };
 
@@ -47,12 +48,12 @@ export const Typewriter = ({
   }, [
     displayedText,
     isDeleting,
-    text,
+    textIndex,
+    texts,
     typingSpeed,
     deletingSpeed,
     delay,
     hasStarted,
-    display,
   ]);
 
   useEffect(() => {
@@ -64,9 +65,9 @@ export const Typewriter = ({
   }, []);
 
   return (
-    <span className="link-name">
+    <span className="repeat-typewriter">
       {displayedText}
-      <span className="black-cursor" style={{ opacity: cursorVisible ? 1 : 0 }}>
+      <span className="cursor" style={{ opacity: cursorVisible ? 1 : 0 }}>
         |
       </span>
     </span>
