@@ -16,7 +16,7 @@ const typewriterMessages = [
 export const Home = () => {
   return (
     <div className="home-page">
-      <Header />
+      <Header pages={["projects", "about", "contact"]} />
       <RepeatTypewriter texts={typewriterMessages} />
       <Id_Badge />
     </div>
