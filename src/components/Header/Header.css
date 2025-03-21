@@ -1,0 +1,115 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.socials {
+  display: flex;
+  flex-flow: row nowrap;
+  z-index: 1;
+  gap: 10px;
+}
+
+.small-icon {
+  width: 25px;
+  height: 25px;
+}
+
+/* Menu */
+.menu-btn {
+  background-color: transparent;
+  color: #f08a0e;
+  text-decoration: underline;
+  border: 1px solid #f08a0e;
+  border-radius: 5px;
+  padding: 0 0.5rem;
+  font-size: 0.75rem;
+  z-index: 3;
+}
+
+.menu-btn:hover {
+  scale: 1.1;
+}
+
+.menu-btn:active {
+  scale: 0.9;
+}
+
+.black {
+  border-color: black;
+  color: black;
+}
+
+.menu-link-list {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #f08a0e;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: top 1s ease-in-out;
+  z-index: 2;
+  line-height: 7rem;
+}
+
+.menu-link {
+  font-size: 5rem;
+  color: black;
+  text-decoration: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.menu-link:hover {
+  scale: 1.01;
+  text-shadow: 2px 2px rgb(218, 216, 216);
+}
+
+.menu-link:active {
+  scale: 0.99;
+  text-shadow: none;
+}
+
+.open {
+  top: 0;
+}
+
+.link-number {
+  padding-left: 3rem;
+}
+
+.link-name {
+  padding-right: 3rem;
+}
+
+.menu-divider {
+  background: black;
+  width: 90vw;
+  border: 1px solid black;
+  margin: 0 auto 0 auto;
+}
+
+.typewriter {
+  overflow: hidden;
+  border-right: 0.1em solid black;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  width: 0;
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+.black-cursor {
+  color: black;
+}

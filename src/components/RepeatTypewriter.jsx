@@ -67,7 +67,10 @@ export const RepeatTypewriter = ({
   return (
     <span className="repeat-typewriter">
       {displayedText}
-      <span className="cursor" style={{ opacity: cursorVisible ? 1 : 0 }}>
+      <span
+        className="orange-cursor"
+        style={{ opacity: cursorVisible ? 1 : 0 }}
+      >
         |
       </span>
     </span>

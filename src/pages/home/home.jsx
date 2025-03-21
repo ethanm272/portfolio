@@ -1,6 +1,6 @@
 import { Id_Badge } from "../../components/Id_Card";
 import { RepeatTypewriter } from "../../components/RepeatTypewriter";
-import { Menu } from "../../components/Menu";
+import { Header } from "../../components/Header/Header";
 import "./home.css";
 
 const typewriterMessages = [
@@ -16,7 +16,7 @@ const typewriterMessages = [
 export const Home = () => {
   return (
     <div className="home-page">
-      <Menu />
+      <Header />
       <RepeatTypewriter texts={typewriterMessages} />
       <Id_Badge />
     </div>
