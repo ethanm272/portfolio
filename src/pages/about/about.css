@@ -1,0 +1,86 @@
+.about-info {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 4rem;
+}
+
+.about-hero {
+  margin: 0 auto;
+  width: 55vw;
+  height: 45vh;
+  background-color: orange;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.about-h1 {
+  font-size: 6rem;
+  line-height: 6rem;
+  font-style: italic;
+  margin-left: 3rem;
+}
+
+.about-me-intro {
+  color: whitesmoke;
+  margin: 0 15vw;
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+  max-width: 1000px;
+}
+
+.about-h2 {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 4rem;
+  line-height: 4rem;
+  font-style: italic;
+  text-decoration: underline orange;
+  margin-bottom: 2rem;
+}
+
+.about-me-experience {
+  color: whitesmoke;
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+  margin: 0 15vw;
+}
+
+.skills-table {
+  color: whitesmoke;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  gap: 2rem;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.table-column {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: left;
+  line-height: 1.5rem;
+  background-color: #333;
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+.table-head {
+  font-size: 2rem;
+  text-decoration: underline orange;
+  margin-bottom: 1rem;
+  text-decoration-thickness: 2px;
+}
+
+.vr {
+  background-color: orange;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.table-item {
+  font-size: 1.3rem;
+}
