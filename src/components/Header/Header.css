@@ -24,13 +24,15 @@
 /* Menu */
 .menu-btn {
   background-color: transparent;
-  color: #f08a0e;
+  color: var(--maroon);
   text-decoration: underline;
-  border: 1px solid #f08a0e;
+  text-decoration-thickness: 2px;
+  border: 2px solid var(--maroon);
   border-radius: 5px;
   padding: 0 0.5rem;
   font-size: 0.9rem;
   z-index: 3;
+  padding-bottom: 3px;
 }
 
 .menu-btn:hover {
@@ -52,7 +54,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: #f08a0e;
+  background: var(--maroon);
   color: black;
   display: flex;
   flex-direction: column;
@@ -70,7 +72,7 @@
 
 .menu-link {
   font-size: 5rem;
-  color: black;
+  color: var(--cream);
   text-decoration: none;
   display: flex;
   flex-flow: row nowrap;
@@ -79,7 +81,7 @@
 
 .menu-link:hover {
   scale: 1.01;
-  text-shadow: 2px 2px rgb(218, 216, 216);
+  text-shadow: 5px 5px rgb(0, 0, 0);
 }
 
 .menu-link:active {
@@ -100,15 +102,15 @@
 }
 
 .menu-divider {
-  background: black;
+  background: var(--blue);
   width: 90%;
-  border: 1px solid black;
+  border: 1px solid var(--blue);
   margin: 0 auto 0 auto;
 }
 
 .typewriter {
   overflow: hidden;
-  border-right: 0.1em solid black;
+  border-right: 0.1em solid var(--blue);
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 0.15em;
@@ -116,6 +118,7 @@
   animation: blink-caret 0.75s step-end infinite;
 }
 
-.black-cursor {
-  color: black;
+.cream {
+  color: var(--cream);
+  border-color: var(--cream);
 }

@@ -12,7 +12,7 @@
 
 /* Recurring Typewriter Text */
 .repeat-typewriter {
-  color: white;
+  color: var(--maroon);
   position: absolute;
   left: 0;
   right: 0;
@@ -25,6 +25,6 @@
   text-align: center;
 }
 
-.orange-cursor {
-  color: #f08a0e;
+.cursor {
+  color: var(--blue);
 }

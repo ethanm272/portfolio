@@ -23,7 +23,7 @@ export const Menu = ({ pages }) => {
   return (
     <>
       <button
-        className={`menu-btn ${isOpen ? " black" : ""}`}
+        className={`menu-btn ${isOpen ? " cream" : ""}`}
         type="button"
         onClick={toggleMenu}
       >

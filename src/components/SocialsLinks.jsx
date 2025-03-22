@@ -21,10 +21,10 @@ export const SocialsLinks = () => {
       </a>
       <a href="mailto:ethan.mylett@yahoo.com" target="_blank">
         <img
-          src="/icons8-email-24.png"
+          src="/icons8-mail-30.png"
           alt="Linked In"
-          height="24"
-          width="24"
+          height="30"
+          width="30"
           className="small-icon"
         />
       </a>

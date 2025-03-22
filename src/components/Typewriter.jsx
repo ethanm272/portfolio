@@ -66,7 +66,7 @@ export const Typewriter = ({
   return (
     <span className="link-name">
       {displayedText}
-      <span className="black-cursor" style={{ opacity: cursorVisible ? 1 : 0 }}>
+      <span className="cursor" style={{ opacity: cursorVisible ? 1 : 0 }}>
         |
       </span>
     </span>

@@ -1,3 +1,13 @@
+/* Variables */
+:root {
+  /* Colors */
+  --cream: rgb(220, 197, 160);
+  --maroon: #550000;
+  --offwhite: #f2f0ef;
+  --grey: #444;
+  --blue: #14527c;
+}
+
 /* Resets */
 * {
   margin: 0;
@@ -24,5 +34,5 @@ body {
   min-height: 100%;
   font-size: medium;
   line-height: 1.3em;
-  background-color: black;
+  background-color: var(--cream);
 }

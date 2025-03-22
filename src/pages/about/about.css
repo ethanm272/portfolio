@@ -8,12 +8,13 @@
   margin: 0 auto;
   width: 55vw;
   height: 45vh;
-  background-color: orange;
+  background-color: var(--blue);
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
+  color: bisque;
 }
 
 .about-h1 {
@@ -24,7 +25,7 @@
 }
 
 .about-me-intro {
-  color: whitesmoke;
+  color: var(--maroon);
   margin: 0 15vw;
   font-size: 1.5rem;
   line-height: 1.7rem;
@@ -32,24 +33,24 @@
 }
 
 .about-h2 {
-  color: whitesmoke;
+  color: var(--maroon);
   text-align: center;
   font-size: 4rem;
   line-height: 4rem;
   font-style: italic;
-  text-decoration: underline orange;
+  text-decoration: underline var(--blue);
   margin-bottom: 2rem;
 }
 
 .about-me-experience {
-  color: whitesmoke;
+  color: var(--maroon);
   font-size: 1.5rem;
   line-height: 1.7rem;
   margin: 0 15vw;
 }
 
 .skills-table {
-  color: whitesmoke;
+  color: var(--maroon);
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
@@ -63,14 +64,14 @@
   flex-flow: column nowrap;
   align-items: left;
   line-height: 1.5rem;
-  background-color: #333;
+  background-color: bisque;
   padding: 1rem;
   border-radius: 15px;
 }
 
 .table-head {
   font-size: 2rem;
-  text-decoration: underline orange;
+  text-decoration: underline var(--blue);
   margin-bottom: 1rem;
   text-decoration-thickness: 2px;
 }
