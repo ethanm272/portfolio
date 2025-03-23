@@ -33,8 +33,11 @@ textarea {
 }
 
 /* General Styles */
-body {
+html {
   scroll-behavior: smooth;
+}
+
+body {
   font-family: var(--modern-font);
   min-height: 100%;
   font-size: medium;

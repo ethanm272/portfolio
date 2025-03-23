@@ -9,12 +9,19 @@ export const About = () => {
         <div className="about-hero">
           <h1 className="about-h1">About</h1>
           <div className="button-container">
-            <button className="about-btn btn-layered-3d btn-layered-3d--color">
+            <a
+              className="about-btn btn-layered-3d btn-layered-3d--color"
+              href="/Ethan_Mylett_Resume.pdf"
+              download="Ethan_Mylett_Resume"
+            >
               Resume
-            </button>
-            <button className="about-btn btn-layered-3d btn-layered-3d--color">
+            </a>
+            <a
+              href="#experience"
+              className="about-btn btn-layered-3d btn-layered-3d--color"
+            >
               Jump to Experience & Skills
-            </button>
+            </a>
           </div>
         </div>
         <p className="about-me-intro">
