@@ -9,8 +9,12 @@ export const About = () => {
         <div className="about-hero">
           <h1 className="about-h1">About</h1>
           <div className="button-container">
-            <button className="about-btn">Resume</button>
-            <button className="about-btn">Jump to Experience & Skills</button>
+            <button className="about-btn btn-layered-3d btn-layered-3d--color">
+              Resume
+            </button>
+            <button className="about-btn btn-layered-3d btn-layered-3d--color">
+              Jump to Experience & Skills
+            </button>
           </div>
         </div>
         <p className="about-me-intro">
@@ -46,10 +50,10 @@ export const About = () => {
         <div>
           <h2 className="about-h2">Experience</h2>
           <p id="experience" className="about-me-experience">
-            - Degree from The Ohio State University in Computer Science,
+            Degree from The Ohio State University in Computer Science,
             specializing in Database Systems and Data Analytics.
             <br></br>
-            <br></br>- Over 7 years of customer facing retail and dining
+            <br></br>Over 7 years of customer facing retail and dining
             experience
           </p>
         </div>

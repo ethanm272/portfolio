@@ -6,6 +6,11 @@
   --offwhite: #f2f0ef;
   --grey: #444;
   --blue: #14527c;
+
+  /* Fonts */
+  --fancy-font: "EB Garamond", serif;
+  --modern-display-font: "Noto Sans Display", sans-serif;
+  --modern-font: "Open Sans", sans-serif;
 }
 
 /* Resets */
@@ -30,7 +35,7 @@ textarea {
 /* General Styles */
 body {
   scroll-behavior: smooth;
-  font-family: "Inconsolata", monospace;
+  font-family: var(--modern-font);
   min-height: 100%;
   font-size: medium;
   line-height: 1.3em;
