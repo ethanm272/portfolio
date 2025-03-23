@@ -1,7 +1,7 @@
 /* Variables */
 :root {
   /* Colors */
-  --cream: rgb(220, 197, 160);
+  --cream: #dcc5a0;
   --maroon: #550000;
   --offwhite: #f2f0ef;
   --grey: #444;
@@ -43,4 +43,21 @@ body {
   font-size: medium;
   line-height: 1.3em;
   background-color: var(--cream);
+}
+
+/* Logo */
+.logo-container {
+  border: 5px solid var(--blue);
+  border-radius: 7px;
+  background-color: var(--maroon);
+  width: 50px;
+  height: 90px;
+  color: var(--cream);
+  font-size: 2rem;
+  text-align: center;
+  line-height: 30px;
+  padding-top: 8px;
+  font-family: var(--fancy-font);
+  font-style: italic;
+  font-weight: 800;
 }

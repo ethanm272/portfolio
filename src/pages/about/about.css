@@ -112,6 +112,7 @@
 
 .btn-layered-3d:active {
   transform: translateY(0.55em);
+  cursor: grab;
 }
 
 .btn-layered-3d:active::before {

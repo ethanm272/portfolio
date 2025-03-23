@@ -41,7 +41,7 @@ export const Menu = ({ pages }) => {
             <Typewriter text={toCapitalCase(pages[1])} display={isOpen} />
           </Link>
           <hr className="menu-divider"></hr>
-          <Link className="menu-link" to={`/${pages[0]}`}>
+          <Link className="menu-link" to={`/${pages[2]}`}>
             <span className="link-number">03.</span>
             <Typewriter text={toCapitalCase(pages[2])} display={isOpen} />
           </Link>
