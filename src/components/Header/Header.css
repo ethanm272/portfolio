@@ -54,7 +54,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: var(--maroon);
+  background: var(--blue);
   color: black;
   display: flex;
   flex-direction: column;
@@ -102,9 +102,9 @@
 }
 
 .menu-divider {
-  background: var(--blue);
+  background: var(--maroon);
   width: 90%;
-  border: 1px solid var(--blue);
+  border: 1px solid var(--maroon);
   margin: 0 auto 0 auto;
 }
 

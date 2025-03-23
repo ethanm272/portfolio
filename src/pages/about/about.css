@@ -5,6 +5,24 @@
   gap: 4rem;
 }
 
+@keyframes expand-down {
+  from {
+    height: 0;
+  }
+  to {
+    height: 45vh;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
 .about-hero {
   margin: 0 auto;
   width: 55vw;
@@ -17,6 +35,7 @@
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   color: bisque;
+  animation: expand-down 0.5s;
 }
 
 .about-h1 {
@@ -25,6 +44,7 @@
   font-style: italic;
   margin-left: 3rem;
   font-family: var(--fancy-font);
+  animation: fade-in 1.2s;
 }
 
 .button-container {
@@ -40,7 +60,6 @@
 .about-btn {
   background-color: var(--cream);
   color: var(--maroon);
-  padding: 0.5rem 1rem;
   border-radius: 0.6rem;
   border-color: var(--maroon);
   font-family: var(--fancy-font);
@@ -48,6 +67,10 @@
   font-style: italic;
   width: fit-content;
   text-align: center;
+  animation-name: fade-in;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.75s;
 }
 
 .btn-layered-3d {
@@ -75,7 +98,7 @@
   height: 100%;
   inset: 0px;
   border-radius: inherit;
-  transform: translate3d(0px, 0.75em, -1em);
+  transform: translate3d(0px, 0.75rem, -1em);
   transition: transform 0.15s ease-out;
 }
 
@@ -156,7 +179,7 @@
 }
 
 .table-head {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   text-decoration: underline var(--blue);
   margin-bottom: 1rem;
   text-decoration-thickness: 4px;
