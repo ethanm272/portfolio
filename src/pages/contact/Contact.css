@@ -1,0 +1,62 @@
+.text-input-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 5%;
+  margin-top: 30vh;
+}
+
+.text-container {
+  width: 45%;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 3rem;
+  padding: 0 2rem;
+}
+
+.contact-form {
+  width: 45%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.form-input {
+  border: none;
+  border-bottom: 2px solid var(--blue);
+  background-color: transparent;
+  transition-property: background;
+  transition-duration: 1s;
+  border-radius: 5px;
+  height: 2.5rem;
+  padding: 0 8px;
+}
+
+.single-input-container {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0 auto 15px auto;
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-input:hover {
+  background: bisque;
+  transition-delay: 0s;
+}
+
+.submit-btn {
+  color: var(--maroon);
+  border: var(--blue) 2px solid;
+  background: bisque;
+  height: 2.5rem;
+  padding-top: 8px;
+}
+
+.submit-btn::before {
+  background: rgb(162, 147, 128);
+  box-shadow: var(--blue) 0px 0px 0px 2px;
+}
+
+label {
+  font-size: 0.75rem;
+}
