@@ -3,7 +3,7 @@
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
-  margin-top: 30vh;
+  margin-top: 15vh;
   padding: 0 2rem;
 }
 
@@ -27,7 +27,6 @@
 }
 
 .contact-link {
-  display: block;
   color: var(--blue);
   text-decoration-color: var(--maroon);
 }
@@ -77,5 +76,26 @@
 }
 
 label {
+  font-size: 0.75rem;
+}
+
+.contact-logo {
+  position: absolute;
+  bottom: 7vh;
+  left: 7vw;
+}
+
+.contact-footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 0 8vw;
+  position: absolute;
+  bottom: 10vh;
+  width: 100%;
+}
+
+.other-contacts {
+  max-width: 300px;
   font-size: 0.75rem;
 }
