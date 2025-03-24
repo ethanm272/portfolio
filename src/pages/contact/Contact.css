@@ -2,22 +2,41 @@
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  gap: 5%;
+  justify-content: space-between;
   margin-top: 30vh;
+  padding: 0 2rem;
 }
 
 .text-container {
-  width: 45%;
+  width: 42.5%;
   display: flex;
   flex-flow: column nowrap;
   gap: 3rem;
-  padding: 0 2rem;
+  color: var(--maroon);
+}
+
+.contact-h2 {
+  margin-bottom: 10px;
+  text-decoration: underline var(--blue);
+  text-decoration-thickness: 3px;
+}
+
+.contact-h4 {
+  margin-bottom: 4px;
+  text-decoration: underline var(--blue);
+}
+
+.contact-link {
+  display: block;
+  color: var(--blue);
+  text-decoration-color: var(--maroon);
 }
 
 .contact-form {
   width: 45%;
   display: flex;
   flex-flow: column nowrap;
+  align-items: flex-start;
 }
 
 .form-input {
@@ -34,9 +53,9 @@
 .single-input-container {
   display: flex;
   flex-flow: column nowrap;
-  margin: 0 auto 15px auto;
+  margin-bottom: 15px;
   width: 100%;
-  max-width: 400px;
+  max-width: 700px;
 }
 
 .form-input:hover {

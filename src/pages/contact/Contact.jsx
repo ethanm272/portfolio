@@ -9,7 +9,7 @@ export const Contact = () => {
       <div className="text-input-container">
         <div className="text-container">
           <section>
-            <h2>Lets Talk.</h2>
+            <h2 className="contact-h2">Lets Talk.</h2>
             <p>
               Looking for a software engineer to join your company? Feel free to
               reach out so we can discuss how I can drive business outcomes at
@@ -17,15 +17,16 @@ export const Contact = () => {
             </p>
           </section>
           <section>
-            <h4>Email</h4>
+            <h4 className="contact-h4">Email</h4>
             <p>ethan.mylett@yahoo.com</p>
           </section>
           <section>
-            <h4>Check Me Out</h4>
+            <h4 className="contact-h4">Check Me Out</h4>
             <a
               href="https://linkedin.com/in/mylett"
               target="_blank"
               rel="noopener noreferrer"
+              className="contact-link"
             >
               LinkedIn
             </a>
@@ -33,6 +34,7 @@ export const Contact = () => {
               href="https://github.com/ethanm272"
               target="_blank"
               rel="noopener noreferrer"
+              className="contact-link"
             >
               GitHub
             </a>
