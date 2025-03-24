@@ -60,7 +60,7 @@ export const About = () => {
             Degree from The Ohio State University in Computer Science,
             specializing in Database Systems and Data Analytics.
             <br></br>
-            <br></br>Over 7 years of customer facing retail and dining
+            <br></br>Over 7 years of customer facing retail and restaurant
             experience
           </p>
         </div>

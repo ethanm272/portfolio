@@ -137,6 +137,7 @@
   line-height: 1.7rem;
   max-width: 1000px;
   text-align: justify;
+  font-family: var(--modern-font);
 }
 
 .about-h2 {

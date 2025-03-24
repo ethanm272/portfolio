@@ -15,15 +15,18 @@
   color: var(--maroon);
 }
 
-.contact-h2 {
+.contact-h1 {
+  font-family: var(--fancy-font);
   margin-bottom: 10px;
   text-decoration: underline var(--blue);
   text-decoration-thickness: 3px;
+  font-style: italic;
 }
 
 .contact-h4 {
   margin-bottom: 4px;
   text-decoration: underline var(--blue);
+  font-style: italic;
 }
 
 .contact-link {
@@ -71,7 +74,7 @@
 }
 
 .submit-btn::before {
-  background: rgb(162, 147, 128);
+  background: rgb(202, 172, 133);
   box-shadow: var(--blue) 0px 0px 0px 2px;
 }
 
