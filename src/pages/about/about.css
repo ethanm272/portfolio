@@ -3,6 +3,7 @@
   flex-flow: column nowrap;
   justify-content: center;
   gap: 4rem;
+  padding-bottom: 150px;
 }
 
 @keyframes expand-down {
@@ -148,14 +149,57 @@
   font-style: italic;
   text-decoration: underline var(--blue);
   margin-bottom: 2rem;
+  animation: revealing-right;
+  animation-timeline: view(block);
+  animation-range: cover 0% cover 50%;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 50%;
+    filter: blur(50px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
+@keyframes revealing-right {
+  from {
+    margin-left: 100vw;
+    filter: blur(50px);
+    opacity: 0.5;
+  }
+  to {
+    margin: 0px;
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes revealing-left {
+  from {
+    margin-right: 100vw;
+    filter: blur(50px);
+    opacity: 0.5;
+  }
+  to {
+    margin: 0px;
+    filter: blur(0px);
+    opacity: 1;
+  }
 }
 
 .about-me-experience {
   color: var(--maroon);
   font-size: 1.3rem;
   line-height: 1.5rem;
-  margin: 0 15vw;
+  padding: 0 15vw;
   text-align: justify;
+  animation: revealing-left;
+  animation-timeline: view(block);
+  animation-range: cover 0% cover 50%;
 }
 
 .skills-table {
@@ -180,6 +224,27 @@
   min-width: fit-content;
 }
 
+.table-column:nth-child(1) {
+  animation: fade-in;
+  animation-timeline: view(block);
+  animation-range: cover 0% cover 30%;
+}
+.table-column:nth-child(2) {
+  animation: fade-in;
+  animation-timeline: view(block);
+  animation-range: cover 0% cover 26%;
+}
+.table-column:nth-child(3) {
+  animation: fade-in;
+  animation-timeline: view(block);
+  animation-range: cover 0% cover 22%;
+}
+.table-column:nth-child(4) {
+  animation: fade-in;
+  animation-timeline: view(block);
+  animation-range: cover 0% cover 18%;
+}
+
 .table-head {
   font-size: 1.5rem;
   text-decoration: underline var(--blue);
@@ -189,4 +254,8 @@
 
 .table-item {
   font-size: 1rem;
+}
+
+.relative {
+  position: relative;
 }

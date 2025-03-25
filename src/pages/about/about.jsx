@@ -1,9 +1,10 @@
 import { Header } from "../../components/Header/Header";
+import { Footer } from "../../components/Footer/Footer";
 import "./about.css";
 
 export const About = () => {
   return (
-    <>
+    <div className="relative">
       <Header pages={["home", "projects", "contact"]} />
       <div className="about-info">
         <div className="about-hero">
@@ -107,6 +108,7 @@ export const About = () => {
           </div>
         </div>
       </div>
-    </>
+      <Footer />
+    </div>
   );
 };
