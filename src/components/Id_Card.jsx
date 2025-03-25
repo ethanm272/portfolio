@@ -55,7 +55,7 @@ export const Id_Badge = () => {
               scale={[100, 0.1, 1]}
             />
             <Lightformer
-              intensity={10}
+              intensity={5}
               color="white"
               position={[-10, 0, 14]}
               rotation={[0, Math.PI / 2, Math.PI / 3]}
@@ -110,7 +110,7 @@ function Band({ maxSpeed = 50, minSpeed = 10 }) {
   useRopeJoint(j2, j3, [[0, 0, 0], [0, 0, 0], 1]);
   useSphericalJoint(j3, card, [
     [0, 0, 0],
-    [0, 1.45, 0],
+    [0, 1.35, 0],
   ]);
 
   useEffect(() => {
