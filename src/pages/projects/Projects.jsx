@@ -1,6 +1,7 @@
 import { Header } from "../../components/Header/Header";
 import { ProjectCard } from "../../components/ProjectCard/ProjectCard";
 import "./Projects.css";
+import data from "../../data/projects.json";
 
 export const Projects = () => {
   return (
@@ -17,12 +18,21 @@ export const Projects = () => {
           </div>
         </div>
         <div className="projects-list">
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
+          {data.projects.map((project, index) => {
+            return (
+              <ProjectCard
+                key={index}
+                title={project.title}
+                hasGitHubLink={project.hasGitHubLink}
+                gitHubLink={project.gitHubLink}
+                hasSiteLink={project.hasSiteLink}
+                siteLink={project.siteLink}
+                technologies={project.technologies}
+                projectDescription={project.projectDescription}
+                projectImage={project.projectImage}
+              />
+            );
+          })}
         </div>
       </div>
     </>

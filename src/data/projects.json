@@ -1,0 +1,14 @@
+{
+  "projects": [
+    {
+      "title": "tides",
+      "hasGitHubLink": true,
+      "gitHubLink": "https://github.com/ethanm272/tides",
+      "hasSiteLink": true,
+      "siteLink": "https://tides-1.vercel.app",
+      "technologies": ["React", "Javascript", "Python", "APIs"],
+      "projectDescription": "Tides allows users to save locations across Florida using NOAA tide information from their CO-OPS stations and APIs. The site features modern design and saved states so users only have to input their locations once!",
+      "projectImage": "/tides-banner.png"
+    }
+  ]
+}
