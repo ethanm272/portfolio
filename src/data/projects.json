@@ -1,7 +1,7 @@
 {
   "projects": [
     {
-      "title": "tides",
+      "title": "Tides",
       "hasGitHubLink": true,
       "gitHubLink": "https://github.com/ethanm272/tides",
       "hasSiteLink": true,
@@ -9,6 +9,26 @@
       "technologies": ["React", "Javascript", "Python", "APIs"],
       "projectDescription": "Tides allows users to save locations across Florida using NOAA tide information from their CO-OPS stations and APIs. The site features modern design and saved states so users only have to input their locations once!",
       "projectImage": "/tides-banner.png"
+    },
+    {
+      "title": "Portfolio",
+      "hasGitHubLink": true,
+      "gitHubLink": "https://github.com/ethanm272/portfolio",
+      "hasSiteLink": false,
+      "siteLink": "",
+      "technologies": ["React", "Javascript", "NodeJS", "ThreeJS"],
+      "projectDescription": "My portfolio, that you are currently seeing now, allows viewers to learn more about me, both in the paragraphs I've typed and in the design choices/features I've made. It is built using react with elements in ThreeJS.",
+      "projectImage": "/Lanyard_Image.png"
+    },
+    {
+      "title": "Spotifriends",
+      "hasGitHubLink": true,
+      "gitHubLink": "https://github.com/agetts/PlaylistCuratorCapstone2024",
+      "hasSiteLink": true,
+      "siteLink": "https://spotifriend.vercel.app",
+      "technologies": ["React", "NodeJS", "Elasticsearch", "ThreeJS", "SQL"],
+      "projectDescription": "A Spotify playlist generator with Spotify API and ElasticSearch integration to create personalized playlists from a 100,000+ song database. Users' favorite artists and genres are used to produce a dynamic playlist of a specified length. Features 3D visualizations of the playlist’s parameters using React-Three-Fiber. Developed in collaboration with a team of 5 talented group-members",
+      "projectImage": "/spotifriends-banner.png"
     }
   ]
 }
