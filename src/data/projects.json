@@ -29,6 +29,16 @@
       "technologies": ["React", "NodeJS", "Elasticsearch", "ThreeJS", "SQL"],
       "projectDescription": "A Spotify playlist generator with Spotify API and ElasticSearch integration to create personalized playlists from a 100,000+ song database. Users' favorite artists and genres are used to produce a dynamic playlist of a specified length. Features 3D visualizations of the playlist’s parameters using React-Three-Fiber. Developed in collaboration with a team of 5 talented group-members",
       "projectImage": "/spotifriends-banner.png"
+    },
+    {
+      "title": "Gesture Mouse Controller",
+      "hasGitHubLink": true,
+      "gitHubLink": "https://github.com/ethanm272/Gesture_Controlled_IO",
+      "hasSiteLink": false,
+      "siteLink": "",
+      "technologies": ["Python", "TensorFlow", "MediaPipe", "OpenCV"],
+      "projectDescription": "A gesture-based mouse control system using TensorFlow and MediaPipe in Python that identifies 21 hand key points and recognize gestures with 97.5% accuracy. Integrated with a webcam, this system was prototyped to let users control mouse movement and clicks in real-time using only hand gestures.",
+      "projectImage": "/gesture-rec-banner.png"
     }
   ]
 }
