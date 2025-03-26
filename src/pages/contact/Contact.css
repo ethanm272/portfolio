@@ -81,3 +81,32 @@
 label {
   font-size: 0.75rem;
 }
+
+.shimmer {
+  color: red;
+  background: linear-gradient(
+    to right,
+    var(--maroon) 0,
+    var(--blue) 10%,
+    var(--maroon) 20%
+  );
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 5s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  white-space: nowrap;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -100px;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}

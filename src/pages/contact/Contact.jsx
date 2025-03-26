@@ -9,7 +9,7 @@ export const Contact = () => {
       <div className="text-input-container">
         <div className="text-container">
           <section>
-            <h1 className="contact-h1">Lets Talk.</h1>
+            <h1 className="contact-h1 shimmer">Lets Talk.</h1>
             <p>
               Looking for a software engineer to join your company? Feel free to
               reach out so we can discuss how I can drive business outcomes at
