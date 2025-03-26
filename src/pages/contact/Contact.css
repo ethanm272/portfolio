@@ -83,7 +83,6 @@ label {
 }
 
 .shimmer {
-  color: red;
   background: linear-gradient(
     to right,
     var(--maroon) 0,

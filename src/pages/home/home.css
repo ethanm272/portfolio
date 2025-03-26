@@ -28,3 +28,10 @@
 .cursor {
   color: var(--maroon);
 }
+
+@media only screen and (max-width: 768px) {
+  .repeat-typewriter {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}

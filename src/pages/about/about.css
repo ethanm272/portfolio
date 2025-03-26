@@ -151,7 +151,7 @@
   margin-bottom: 2rem;
   animation: revealing-right;
   animation-timeline: view(block);
-  animation-range: cover 0% cover 50%;
+  animation-range: cover 0% cover 25%;
 }
 
 @keyframes fade-in {
@@ -199,7 +199,7 @@
   text-align: justify;
   animation: revealing-left;
   animation-timeline: view(block);
-  animation-range: cover 0% cover 50%;
+  animation-range: cover 0% cover 25%;
 }
 
 .skills-table {
