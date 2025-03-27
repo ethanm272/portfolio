@@ -40,13 +40,7 @@ export const Contact = () => {
             </a>
           </section>
         </div>
-        <form
-          onsubmit={(event) => {
-            event.preventDefault();
-            return false;
-          }}
-          className="contact-form"
-        >
+        <form className="contact-form">
           <section className="single-input-container">
             <label htmlFor="fname">First Name</label>
             <input
@@ -77,6 +71,10 @@ export const Contact = () => {
             />
           </section>
           <button
+            onsubmit={(event) => {
+              event.preventDefault();
+              return false;
+            }}
             type="submit"
             value="Submit"
             className="submit-btn btn-layered-3d btn-layered-3d--color"
