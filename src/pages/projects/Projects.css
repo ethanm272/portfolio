@@ -46,3 +46,9 @@
   gap: 1rem;
   padding: 0 2rem;
 }
+
+@media only screen and (max-height: 590px) {
+  .projects-container {
+    padding-bottom: 30px;
+  }
+}

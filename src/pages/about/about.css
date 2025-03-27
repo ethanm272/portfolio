@@ -272,3 +272,21 @@
     padding: 0 7vw;
   }
 }
+
+@media (orientation: landscape) {
+  .button-container {
+    flex-flow: row nowrap;
+    margin: 0 1rem;
+  }
+
+  .about-hero {
+    height: fit-content;
+    gap: 2rem;
+  }
+}
+
+@media only screen and (max-height: 590px) {
+  .about-info {
+    padding-bottom: 30px;
+  }
+}
