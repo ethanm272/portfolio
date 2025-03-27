@@ -44,7 +44,9 @@ export const Contact = () => {
           className="contact-form"
           onSubmit={(event) => {
             event.preventDefault();
-            window.location.reload();
+            document.getElementById("fname").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("message").value = "";
             return false;
           }}
         >
