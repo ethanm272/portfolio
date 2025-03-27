@@ -44,10 +44,5 @@
   max-width: 1300px;
   justify-content: center;
   gap: 1rem;
-}
-
-.test {
-  width: fit-content;
-  height: 300px;
-  background: var(--blue);
+  padding: 0 2rem;
 }

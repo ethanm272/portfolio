@@ -19,4 +19,11 @@
 .other-contacts {
   max-width: 300px;
   font-size: 0.75rem;
+  text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+  .other-contacts {
+    max-width: 200px;
+  }
 }

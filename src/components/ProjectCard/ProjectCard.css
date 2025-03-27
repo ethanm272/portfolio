@@ -1,7 +1,7 @@
 .project-card-container {
   display: flex;
   flex-flow: column nowrap;
-  width: 50%;
+  max-width: 50%;
   border-radius: 10px;
   color: var(--maroon);
   background-color: bisque;
@@ -56,6 +56,7 @@
 .project-title {
   font-family: var(--modern-display-font);
   font-size: 1.75rem;
+  line-height: 1.75rem;
   font-style: italic;
 }
 
