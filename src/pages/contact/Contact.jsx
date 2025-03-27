@@ -41,7 +41,8 @@ export const Contact = () => {
           </section>
         </div>
         <form
-          onsubmit={() => {
+          onsubmit={(event) => {
+            event.preventDefault();
             return;
           }}
           className="contact-form"
