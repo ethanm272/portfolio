@@ -26,11 +26,11 @@ export const About = () => {
           </div>
         </div>
         <p className="about-me-intro">
-          Going from 0's and 1's to complex algorithms, designs, and crazy
-          learning algoriths like neural nets has always fascinated me. Starting
-          from when I built my first pc in junior high, I was never afraid to
-          jump into a new realm, whether it be my first lines of code in high
-          school or constructing complex neural nets in college.
+          Going from 0's and 1's to complex processes, designs, and crazy
+          learning algorithms like neural nets has always fascinated me.
+          Starting from when I built my first pc in junior high, I was never
+          afraid to jump into a new realm, whether it be my first lines of code
+          in high school or constructing complex neural nets in college.
           <br></br>
           <br></br>
           Fast forward to 2025 and even though I feel like I've tried it all --
