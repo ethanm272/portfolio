@@ -40,7 +40,12 @@ export const Contact = () => {
             </a>
           </section>
         </div>
-        <form action="#" className="contact-form">
+        <form
+          onsubmit={() => {
+            return;
+          }}
+          className="contact-form"
+        >
           <section className="single-input-container">
             <label htmlFor="fname">First Name</label>
             <input
