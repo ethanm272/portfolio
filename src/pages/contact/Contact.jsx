@@ -1,6 +1,6 @@
 import { Header } from "../../components/Header/Header";
 import { Footer } from "../../components/Footer/Footer";
-import "./Contact.css";
+import "./contact.css";
 
 export const Contact = () => {
   return (
