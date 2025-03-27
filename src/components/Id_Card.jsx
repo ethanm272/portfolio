@@ -18,8 +18,8 @@ import {
 import { MeshLineGeometry, MeshLineMaterial } from "meshline";
 
 extend({ MeshLineGeometry, MeshLineMaterial });
-useGLTF.preload("public/3D_Badge.glb");
-useTexture.preload("public/Lanyard_Image.png");
+useGLTF.preload("/3D_Badge.glb");
+useTexture.preload("/Lanyard_Image.png");
 
 export const Id_Badge = () => {
   return (
@@ -88,8 +88,8 @@ function Band({ maxSpeed = 50, minSpeed = 10 }) {
     linearDamping: 2,
   };
 
-  const { nodes, materials } = useGLTF("public/3D_Badge.glb");
-  const texture = useTexture("public/Lanyard_Image.png");
+  const { nodes, materials } = useGLTF("/3D_Badge.glb");
+  const texture = useTexture("/Lanyard_Image.png");
   const { width, height } = useThree((state) => state.size);
 
   const [curve] = useState(
