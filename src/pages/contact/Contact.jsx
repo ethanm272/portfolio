@@ -44,6 +44,7 @@ export const Contact = () => {
           className="contact-form"
           onSubmit={(event) => {
             event.preventDefault();
+            window.location.reload();
             return false;
           }}
         >
