@@ -16,11 +16,11 @@ export const Contact = () => {
               your company!
             </p>
           </section>
-          <section>
+          <section className="about-contact-info">
             <h4 className="contact-h4">Email</h4>
             <p>ethan.mylett@yahoo.com</p>
           </section>
-          <section>
+          <section className="about-contact-info">
             <h4 className="contact-h4">Check Me Out</h4>
             <a
               href="https://linkedin.com/in/mylett"

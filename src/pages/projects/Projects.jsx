@@ -12,7 +12,8 @@ export const Projects = () => {
         <div className="projects-container">
           <div className="container-header-description">
             <div className="container-header">
-              <span className="blue">/</span>projects
+              <span className="blue">/</span>
+              <span className="shimmer">projects</span>
               <span className="blue">.</span>
             </div>
             <div className="container-description">

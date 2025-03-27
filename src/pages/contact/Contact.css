@@ -1,10 +1,11 @@
 .text-input-container {
   display: flex;
   flex-flow: row wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  margin-top: 20vh;
-  padding: 0 2rem;
+  position: relative;
+  height: 100vh;
+  padding: 25vh 2rem 0 2rem;
 }
 
 .text-container {
@@ -106,6 +107,35 @@ label {
     background-position: 180px;
   }
   100% {
-    background-position: 180px;
+    background-position: 250px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .text-input-container {
+    flex-flow: column nowrap;
+    height: 100%;
+    padding: 105px 2rem 200px 2rem;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .text-container {
+    width: 100%;
+  }
+
+  .contact-form {
+    width: 100%;
+    align-items: center;
+  }
+
+  .about-contact-info {
+    display: none;
+  }
+}
+
+@media only screen and (max-height: 590px) {
+  .contact-footer {
+    display: none;
   }
 }

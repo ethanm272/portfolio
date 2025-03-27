@@ -1,17 +1,12 @@
-.contact-logo {
-  position: absolute;
-  bottom: 7vh;
-  left: 7vw;
-}
-
 .contact-footer {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  padding: 0 8vw;
+  padding: 0 5%;
   position: absolute;
   bottom: 0;
-  width: 100%;
+  left: 5%;
+  width: 90%;
   height: 90px;
   margin-bottom: 4vh;
 }
