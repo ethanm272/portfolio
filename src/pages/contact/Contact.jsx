@@ -43,7 +43,7 @@ export const Contact = () => {
         <form
           onsubmit={(event) => {
             event.preventDefault();
-            return;
+            return false;
           }}
           className="contact-form"
         >
