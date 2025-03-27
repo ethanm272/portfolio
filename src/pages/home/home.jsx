@@ -1,7 +1,7 @@
 import { Id_Badge } from "../../components/Id_Card";
 import { RepeatTypewriter } from "../../components/RepeatTypewriter";
 import { Header } from "../../components/Header/Header";
-import "./home.css";
+import "./home-styles.css";
 
 const typewriterMessages = [
   "welcome to Ethan's portfolio",

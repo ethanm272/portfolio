@@ -1,7 +1,7 @@
 import { Header } from "../../components/Header/Header";
 import { ProjectCard } from "../../components/ProjectCard/ProjectCard";
 import { Footer } from "../../components/Footer/Footer";
-import "./projects.css";
+import "./projects-styles.css";
 import data from "../../data/projects.json";
 
 export const Projects = () => {
